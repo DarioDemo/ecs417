@@ -1,0 +1,16 @@
+.p1 {
+	/* CSS properties for class p1 */
+	background-color: pink;
+	font-family: serif;
+   	color: blue;
+	font-size: 12pt;
+
+}
+
+.p2 {
+	/* CSS properties for class p2 */
+	background-color: green;
+	font-family: fantasy;
+	color : white;
+	font-size: 14pt;
+}
