@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>T Shirt Ordering System</title>
+		<!-- Linking reset and CSS file -->	
+		<link rel="stylesheet" type="text/css" href="reset4.css">
+		<link rel="stylesheet" type="text/css" href="Task4CSS.css">
+	</head>
+	<body>
+		<form method="POST" action="http://webprojects.eecs.qmul.ac.uk/un300/week4/week4_process.php">
+		<fieldset class = "center">
+				<legend>Shirt Order Form</legend>
+				<fieldset class = "center">
+				<!-- Selecting element for shirt size -->	
+				<p>
+				<label for="choices">Select Size</label><br>
+				<select name = "choices" size = 5>
+					<option>XS</option>		
+					<option>S</option>	
+					<option>M</option>	
+					<option>L</option>	
+					<option>XL</option>			
+				</select><br>
+				</p>
+
+				<!-- input type radio (Short/Long)-->	
+				<p>
+				<label for="sleeves">Sleeves</label><br>
+				<input type="radio" name="sleeves" value="1" checked>Short <br>
+				<input type="radio" name="sleeves" value="2">Long <br>
+				</p>
+				
+				<!-- Shirt Color -->
+				<p>
+				<label>Choose Shirt Color</label><br>	
+				<input type ="color" name="colorChoice"><br>
+				</p>
+
+				<!-- Quantity Using input type number (1-10) -->
+				<p>
+				<label>Quantity</label><br>
+				<input type="number" min="1" max="10" name="Quantity"><br>
+				</p>
+
+				<!-- Date Requested -->
+				<p>
+				<label for="date">Date Requested:</label><br>
+				<input type="datetime-local" name="date"><br>
+				</p>
+			</fieldset><br>
+
+			<fieldset class = "center">
+				<!-- Enter Name and Email -->
+				<p>
+				<label for="name">Name</label><br>
+				<input type="text" name="name"><br>
+				<label for= "email">Email</label><br>
+				<input type="text" name="email"><br>
+				</p>
+				<!-- Enter Telephone 0-9 is the numbers u can choose from {2} is how many digits it can be 0-9 {2} accepts 12 or 24 etc  -->
+				<p>
+				<label for="phone">Telephone Number</label><br>
+				<input type="tel" name="phone" pattern="[0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+				</p>
+			</fieldset><br>
+
+			<fieldset class = "center">
+				<!-- Enter Address -->
+				<p>
+				<label for="Address">Address</label><br>
+				<input type="text" name="Address"><br>
+				</p>
+				<!-- City -->
+				<label for="City">City</label><br>
+				<input type="text" name="City" list="cities"><br>
+				<datalist id = "cities">
+					<option>London</option>
+					<option>Manchester</option>
+					<option>Liverpool</option>
+					<option>Newcastle</option>
+			    </datalist>
+
+			    <!-- Postcode -->
+			    <p>
+			    <label for="Postcode">Postcode</label><br>
+				<input type="text" name="Postcode"><br>
+				</p>
+			</fieldset><br>
+
+				<!-- Checkbox -->
+			<fieldset class = "last">
+				<p>
+				<label for="tick">Please keep me informed about future shirt designs</label><br>
+				<input type="checkbox" name="tick"><br>
+				</p>
+
+				<!-- Submit Button and reset button -->
+				<p>
+					<center><input type = "Submit" class="button" name="Submit"></center> <br> <center><input type = "Reset" class ="button" name="Clear Form"></center>
+				</p>
+			</form>
+			</fieldset>
+		</fieldset>
+	</body>
+</html>
