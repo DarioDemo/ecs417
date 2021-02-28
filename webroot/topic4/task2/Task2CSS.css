@@ -1,0 +1,25 @@
+
+/*table display*/
+table{
+	border: solid 1pt grey;
+	border-spacing: 4pt;
+	font-family: ariel, Helvetica
+}
+
+/*table cell display*/
+td{
+	border: solid 1pt grey;
+}
+
+/*table heading display*/
+th{
+	border: solid 1pt grey;
+	background-color: grey;
+}
+
+/*Image display*/
+img{
+	width: 100px;
+	height: 150px;
+	border-radius: 8px;
+}
