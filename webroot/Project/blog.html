@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Rostam's Blog</title> 
+	<meta charset="utf-8"> <!-- Used to specify the character encoding for the HTML Document--> 
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<header> <!-- Represents a container for introductory content-->
+		<hgroup> <!-- Used to Group Heading Elements-->
+			<div class = "headingStyle"> 
+			<h1>Blog</h1>
+		</hgroup>
+	</header>
+
+	<section> <!-- Used to define a section in the document-->
+		<nav> <!-- Used to define a set of navigation links-->
+			<div class = "tabStyle">
+			<a href="home.html">Home</a>
+			<a href="education.html">Education</a>
+			<a href="experience.html">Experience</a>
+			<a href="blog.html">Blog</a>
+		</nav>
+	</section>
+
+	<section>
+		<article>
+			<div class="middleStyle">
+			<h3>Login Here</h3>
+			<br>
+		<form method="post" action="login.php">
+			<label> Email </label> 
+			<br>
+			<input type="email" name="Email" placeholder="example@mail.com" required/>	
+			<br>
+			<br>
+
+			<p><label> Password </label> <br>
+			<input type="password" name="Password" required/>	
+			</p>
+			<br>
+			<button class="button" type="submit"> Login </button>
+
+		</form>
+		</article>
+	</section>
+
+	<section>
+		<article>
+			<div class = "middleStyle">
+			<h3>Post Blog</h3>
+			<br>
+		    <form action="add.php" method= "POST">
+		    	<!--Blog Title-->
+				<input type="text" name="title" placeholder="Title">
+				<br><br>
+
+				<!--Blog input text-->
+				<textarea class = "textarea" id = "textenter" placeholder="Enter Your Text Here" name = "text"></textarea>
+
+				<button type = "submit">Post</button>
+				<button type="reset">Clear</button>
+			</form>
+		</article>
+	</section>
+
+
+	<footer>
+		<!-- Bottom of the HTML File with links-->
+		<div class="footer">
+			<div class="footer-content">
+				<p><a href="home.html">Home</a></p><!--Link to homepage of website-->
+			</div>
+			<div class="footer-bottom">
+				 &copy; Rostam Satarzai | 2021
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
